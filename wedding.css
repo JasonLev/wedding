@@ -101,9 +101,10 @@ h3 > span {
 #hotelContainter {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  overflow: hidden;
 }
 .gridItem {
-  margin: 1.5em;
+  margin-right: 1.5em;
 }
 main > hr {
   width: 90%;
@@ -119,6 +120,9 @@ section > hr {
   }
   #hebrew {
     font-size: 2em;
+  }
+  section {
+    padding: 5%;
   }
   header > h1 {
     position: fixed;
@@ -138,5 +142,10 @@ section > hr {
   }
   iframe {
     width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  header > h1 {
+    font-size: 3em;
   }
 }
